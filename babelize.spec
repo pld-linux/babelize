@@ -4,7 +4,7 @@ Name:		babelize
 Version:	1.1.0
 Release:	1
 License:	GPL v2+
-Group:		X11/Applications/Games
+Group:		Applications/Games
 Source0:	https://babelize.org/download/babelize/%{name}-%{version}.tar.bz2
 # Source0-md5:	1905e5be41b12994d8aa0aa80b401cea
 Patch0:		%{name}-dirs.patch
