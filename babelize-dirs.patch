@@ -1,0 +1,16 @@
+--- babelize-1.1.0/etc/Makefile.am~	2007-05-31 21:00:28.000000000 +0200
++++ babelize-1.1.0/etc/Makefile.am	2007-06-16 01:56:54.000000000 +0200
+@@ -7,4 +7,4 @@
+ sysconf_DATA = babelize.conf
+ 
+ install-data-hook: babelize.conf
+-	$(sedpath) 's,LANGPACK_DIR=.*,LANGPACK_DIR="$(datadir)/babelize/langpacks",' -i $(sysconfdir)/babelize.conf
++	$(sedpath) 's,LANGPACK_DIR=.*,LANGPACK_DIR="$(datadir)/babelize/langpacks",' -i $(RPM_BUILD_ROOT)$(sysconfdir)/babelize.conf
+--- babelize-1.1.0/share/babelize/Makefile.am~	2007-05-31 21:00:28.000000000 +0200
++++ babelize-1.1.0/share/babelize/Makefile.am	2007-06-16 02:09:20.000000000 +0200
+@@ -26,4 +26,4 @@
+ 	$(sedpath) 's,@TAR@,${tarpath},g' -i ${babelizedir}/babelize
+ 	$(sedpath) 's,@XDELTA@,${xdeltapath},g' -i ${babelizedir}/babelize
+ 	$(sedpath) 's,@STAT@,${statpath},g' -i ${babelizedir}/babelize
+-	$(mkdirpath) -p ${langpackdir}
++	$(mkdirpath) -p $(RPM_BUILD_ROOT)${langpackdir}
