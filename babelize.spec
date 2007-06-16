@@ -12,7 +12,7 @@ URL:		https://babelize.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	sed >= 4.0
-BuildRequires:	xdelta
+BuildRequires:	xdelta >= 1.1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
