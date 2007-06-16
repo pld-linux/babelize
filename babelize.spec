@@ -1,5 +1,5 @@
 Summary:	Localization Project for many Linux games
-Summary(pl.UTF-8):	Projekt Lokalizacji dla wielu gier na Linuksa
+Summary(pl.UTF-8):	Projekt lokalizacji dla wielu gier na Linuksa
 Name:		babelize
 Version:	1.1.0
 Release:	1
@@ -17,15 +17,15 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Babelize is a project to localize games (commercial or free) that were
-ported nativly to Linux like that from Lokigames or
+ported natively to Linux like that from Lokigames or
 Linuxgamepublishing. The only thing you need is one original Game CD
-and the patchfile from Babelize.
+and the patch file from Babelize.
 
 %description -l pl.UTF-8
 Babelize jest projektem, który lokalizuje gry (komercyjne i darmowe),
 które posiadają natywny port dla Linuksa, jak na przykład gry z
 Lokigames czy Linuxgamepublishing. Jedyną potrzebną rzeczą jest
-oryginalna płyta CD z grą oraz patch z Babelize.
+oryginalna płyta CD z grą oraz łata z Babelize.
 
 %prep
 %setup -q
