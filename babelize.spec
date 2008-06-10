@@ -30,7 +30,7 @@ oryginalna płyta CD z grą oraz łata z Babelize.
 %prep
 %setup -q
 %patch0 -p1
-%{__sed} -i 's@${babelizedir}@$(RPM_BUILD_ROOT)%{_bindir}@' {bin/Makefile.am,share/babelize/Makefile.am}
+%{__sed} -i -e 's@${babelizedir}@$(RPM_BUILD_ROOT)%{_bindir}@' {bin/Makefile.am,share/babelize/Makefile.am}
 
 %build
 %{__aclocal}
