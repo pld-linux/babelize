@@ -1,12 +1,12 @@
 Summary:	Localization Project for many Linux games
 Summary(pl.UTF-8):	Projekt lokalizacji dla wielu gier na Linuksa
 Name:		babelize
-Version:	1.1.0
+Version:	1.1.1
 Release:	1
 License:	GPL v2+
 Group:		Applications/Games
 Source0:	https://babelize.org/download/babelize/%{name}-%{version}.tar.bz2
-# Source0-md5:	1905e5be41b12994d8aa0aa80b401cea
+# Source0-md5:	3ec4cc76e0167849db84155169d58276
 Patch0:		%{name}-dirs.patch
 URL:		https://babelize.org/
 BuildRequires:	autoconf
